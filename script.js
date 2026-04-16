@@ -7,7 +7,7 @@ async function searchData() {
   const resultsDiv = document.getElementById("results");
   resultsDiv.innerHTML = "";
 
-  let found = false;
+  let found = true;
 
   for (let row of rows) {
     const [id, name, course] = row.split(",");
