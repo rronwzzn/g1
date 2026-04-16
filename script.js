@@ -1,6 +1,6 @@
 async function searchData() {
   const query = document.getElementById("searchInput").value.toLowerCase();
-  const response = await fetch("database.csv");
+  const response = await fetch("data.csv");
   const data = await response.text();
 
   const rows = data.split("\n").slice(1);
